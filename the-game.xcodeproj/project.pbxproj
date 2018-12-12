@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		6395955121C16D8D0068A00D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395955021C16D8D0068A00D /* AppDelegate.swift */; };
-		6395955321C16D8D0068A00D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395955221C16D8D0068A00D /* ViewController.swift */; };
-		6395955621C16D8D0068A00D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6395955421C16D8D0068A00D /* Main.storyboard */; };
 		6395955821C16D8D0068A00D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6395955721C16D8D0068A00D /* Assets.xcassets */; };
 		6395955B21C16D8D0068A00D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6395955921C16D8D0068A00D /* LaunchScreen.storyboard */; };
+		63B2F3E221C1721C001197FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2F3E021C1721C001197FD /* LoginViewController.swift */; };
+		63B2F3E321C1721C001197FD /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63B2F3E121C1721C001197FD /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6395954D21C16D8D0068A00D /* the-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "the-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6395955021C16D8D0068A00D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6395955221C16D8D0068A00D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6395955521C16D8D0068A00D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6395955721C16D8D0068A00D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6395955A21C16D8D0068A00D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6395955C21C16D8D0068A00D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B2F3E021C1721C001197FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		63B2F3E121C1721C001197FD /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +39,7 @@
 			isa = PBXGroup;
 			children = (
 				6395954F21C16D8D0068A00D /* the-game */,
+				6395955C21C16D8D0068A00D /* Info.plist */,
 				6395954E21C16D8D0068A00D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,13 +56,44 @@
 			isa = PBXGroup;
 			children = (
 				6395955021C16D8D0068A00D /* AppDelegate.swift */,
-				6395955221C16D8D0068A00D /* ViewController.swift */,
-				6395955421C16D8D0068A00D /* Main.storyboard */,
-				6395955721C16D8D0068A00D /* Assets.xcassets */,
-				6395955921C16D8D0068A00D /* LaunchScreen.storyboard */,
-				6395955C21C16D8D0068A00D /* Info.plist */,
+				63B2F3E421C17242001197FD /* Login */,
+				63B2F3E721C1729D001197FD /* Launch Screen */,
+				63B2F3E621C1727B001197FD /* Assets */,
 			);
 			path = "the-game";
+			sourceTree = "<group>";
+		};
+		63B2F3E421C17242001197FD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				63B2F3E521C1724D001197FD /* Domain */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		63B2F3E521C1724D001197FD /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				63B2F3E021C1721C001197FD /* LoginViewController.swift */,
+				63B2F3E121C1721C001197FD /* LoginViewController.xib */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		63B2F3E621C1727B001197FD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6395955721C16D8D0068A00D /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		63B2F3E721C1729D001197FD /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				6395955921C16D8D0068A00D /* LaunchScreen.storyboard */,
+			);
+			path = "Launch Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +154,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B2F3E321C1721C001197FD /* LoginViewController.xib in Resources */,
 				6395955B21C16D8D0068A00D /* LaunchScreen.storyboard in Resources */,
 				6395955821C16D8D0068A00D /* Assets.xcassets in Resources */,
-				6395955621C16D8D0068A00D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6395955321C16D8D0068A00D /* ViewController.swift in Sources */,
+				63B2F3E221C1721C001197FD /* LoginViewController.swift in Sources */,
 				6395955121C16D8D0068A00D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +175,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6395955421C16D8D0068A00D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6395955521C16D8D0068A00D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6395955921C16D8D0068A00D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,7 +307,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "the-game/Info.plist";
+				DEVELOPMENT_TEAM = DL2AMM3ZF4;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leandro.the-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,7 +326,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "the-game/Info.plist";
+				DEVELOPMENT_TEAM = DL2AMM3ZF4;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leandro.the-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
