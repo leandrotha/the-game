@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03F42EAD21CDB576003E305A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03F42EAC21CDB576003E305A /* GoogleService-Info.plist */; };
 		6395955121C16D8D0068A00D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395955021C16D8D0068A00D /* AppDelegate.swift */; };
 		6395955821C16D8D0068A00D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6395955721C16D8D0068A00D /* Assets.xcassets */; };
 		6395955B21C16D8D0068A00D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6395955921C16D8D0068A00D /* LaunchScreen.storyboard */; };
 		63B2F3E221C1721C001197FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2F3E021C1721C001197FD /* LoginViewController.swift */; };
 		63B2F3E321C1721C001197FD /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63B2F3E121C1721C001197FD /* LoginViewController.xib */; };
+		F75FD76A5E24094E6A9C604E /* libPods-the-game.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A550E8FD50907E6D8B619B4 /* libPods-the-game.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03F42EAC21CDB576003E305A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1523B0F6366BAF358F64947C /* Pods-the-game.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-game.release.xcconfig"; path = "Pods/Target Support Files/Pods-the-game/Pods-the-game.release.xcconfig"; sourceTree = "<group>"; };
+		2A550E8FD50907E6D8B619B4 /* libPods-the-game.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-the-game.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45CA576577EC8B317EA5504E /* Pods-the-game.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-game.debug.xcconfig"; path = "Pods/Target Support Files/Pods-the-game/Pods-the-game.debug.xcconfig"; sourceTree = "<group>"; };
 		6395954D21C16D8D0068A00D /* the-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "the-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6395955021C16D8D0068A00D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6395955721C16D8D0068A00D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,18 +35,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F75FD76A5E24094E6A9C604E /* libPods-the-game.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BFBA568817A666386CADBDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45CA576577EC8B317EA5504E /* Pods-the-game.debug.xcconfig */,
+				1523B0F6366BAF358F64947C /* Pods-the-game.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6395954421C16D8C0068A00D = {
 			isa = PBXGroup;
 			children = (
 				6395954F21C16D8D0068A00D /* the-game */,
 				6395955C21C16D8D0068A00D /* Info.plist */,
+				03F42EAC21CDB576003E305A /* GoogleService-Info.plist */,
 				6395954E21C16D8D0068A00D /* Products */,
+				1BFBA568817A666386CADBDB /* Pods */,
+				C983F4342A2FA5794C778C27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +115,14 @@
 			path = "Launch Screen";
 			sourceTree = "<group>";
 		};
+		C983F4342A2FA5794C778C27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A550E8FD50907E6D8B619B4 /* libPods-the-game.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +130,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6395955F21C16D8D0068A00D /* Build configuration list for PBXNativeTarget "the-game" */;
 			buildPhases = (
+				C18AC9A23CA966B5B195B644 /* [CP] Check Pods Manifest.lock */,
 				6395954921C16D8C0068A00D /* Sources */,
 				6395954A21C16D8C0068A00D /* Frameworks */,
 				6395954B21C16D8C0068A00D /* Resources */,
@@ -155,12 +183,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B2F3E321C1721C001197FD /* LoginViewController.xib in Resources */,
+				03F42EAD21CDB576003E305A /* GoogleService-Info.plist in Resources */,
 				6395955B21C16D8D0068A00D /* LaunchScreen.storyboard in Resources */,
 				6395955821C16D8D0068A00D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C18AC9A23CA966B5B195B644 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-the-game-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6395954921C16D8C0068A00D /* Sources */ = {
@@ -304,6 +358,7 @@
 		};
 		6395956021C16D8D0068A00D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45CA576577EC8B317EA5504E /* Pods-the-game.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,6 +378,7 @@
 		};
 		6395956121C16D8D0068A00D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1523B0F6366BAF358F64947C /* Pods-the-game.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
