@@ -12,6 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="the_game" customModuleProvider="target">
             <connections>
+                <outlet property="stackContinuar" destination="SxS-tR-nnJ" id="xaP-d1-sJR"/>
+                <outlet property="stackTextFields" destination="EBp-DI-UCs" id="Xpe-NY-WHf"/>
+                <outlet property="tfEmail" destination="eHB-ec-Wfw" id="Va3-5i-Zzs"/>
+                <outlet property="tfSenha" destination="b3U-bY-BzG" id="dri-CG-ETV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -29,6 +33,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="Zd3-Ee-UJ5"/>
                             </constraints>
+                            <viewLayoutGuide key="safeArea" id="mAt-xz-a90"/>
                             <state key="normal" title="Continuar">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -70,14 +75,14 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EBp-DI-UCs" secondAttribute="trailing" constant="16" id="0u4-sT-tYe"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SxS-tR-nnJ" secondAttribute="trailing" id="FR1-3T-wny"/>
-                <constraint firstItem="EBp-DI-UCs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="IUO-YI-0nD"/>
-                <constraint firstItem="EBp-DI-UCs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="NBK-ng-LYA"/>
-                <constraint firstItem="SxS-tR-nnJ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="mD2-uR-ar6"/>
-                <constraint firstItem="SxS-tR-nnJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wfe-Od-auc"/>
+                <constraint firstAttribute="trailing" secondItem="EBp-DI-UCs" secondAttribute="trailing" constant="16" id="0u4-sT-tYe"/>
+                <constraint firstItem="SxS-tR-nnJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3eK-t3-8yK"/>
+                <constraint firstItem="EBp-DI-UCs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="IUO-YI-0nD"/>
+                <constraint firstItem="EBp-DI-UCs" firstAttribute="top" secondItem="mRR-5a-jFc" secondAttribute="top" constant="30" id="NBK-ng-LYA"/>
+                <constraint firstAttribute="trailing" secondItem="SxS-tR-nnJ" secondAttribute="trailing" id="lUg-5Z-r6b"/>
+                <constraint firstItem="SxS-tR-nnJ" firstAttribute="bottom" secondItem="mRR-5a-jFc" secondAttribute="bottom" id="t4Q-EZ-l3i"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <viewLayoutGuide key="safeArea" id="mRR-5a-jFc"/>
         </view>
     </objects>
 </document>

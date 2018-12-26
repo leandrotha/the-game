@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,21 +20,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     //MARK: Application Delegate
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         setupNavigationController()
         
         return true
     }
     
+    
     //MARK: Helpers
     
+    func setupFireBaseProducts() {
+        FirebaseApp.configure()
+    }
+    
     func setupNavigationController() {
-        guard let window = window else {
-            fatalError()
-        }
-        
-        window.rootViewController = UINavigationController(rootViewController: LoginViewController(nibName: "LoginViewController", bundle: nil))
-        window.makeKeyAndVisible()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = .white
+        let navController = UINavigationController(rootViewController: LoginViewController(nibName: "LoginViewController", bundle: nil))
+        navController.navigationBar.barStyle = .blackTranslucent
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
     }
 
 }
