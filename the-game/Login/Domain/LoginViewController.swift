@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
+    
+    var database: DatabaseReference?
     
     //MARK: - Outlets
     
@@ -44,21 +47,62 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         initialSetup()
+        callFirebase({ [weak self] result in
+            guard let self = self else {return}
+            self.changeBackgroundWith(color: result)
+        })
+    }
+    
+    deinit {
+        if let db = database {
+            db.removeAllObservers()
+        }
     }
     
     //MARK: - Helpers
     
+    func callFirebase(_ callback: @escaping (String) -> ()) {
+        database = Database.database().reference().child("Color")
+        
+        guard let db = database else {return}
+        
+        db.observe(.childChanged, with: { snapshot in
+            print("======================\nLISTENING\n======================")
+            let value = snapshot.value as! String
+            callback(value)
+        })
+    }
+    
+    func changeBackgroundWith(color: String) {
+        switch color {
+        case ".red":
+            view.backgroundColor = .red
+        case ".blue":
+            view.backgroundColor = .blue
+        case ".green":
+            view.backgroundColor = .green
+        default:
+            view.backgroundColor = .clear
+        }
+    }
+    
     func initialSetup() {
         view.backgroundColor = Constants.backgroundGray
+    }
+    
+    //MARK: - Actions
+    
+    @IBAction func onClickContinuar(sender: UIButton) {
+        self.navigationController?.setViewControllers([HomeViewController()], animated: true)
     }
     
 }
 
 extension LoginViewController: UITextFieldDelegate {
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        guard let tfEmail = tfEmail else {return}
-        guard let tfSenha = tfSenha else {return}
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let tfEmail = tfEmail else {return true}
+        guard let tfSenha = tfSenha else {return true}
         
         if let email = tfEmail.text, let senha = tfSenha.text {
             if !email.isEmpty && !senha.isEmpty {
@@ -67,7 +111,8 @@ extension LoginViewController: UITextFieldDelegate {
                 self.stackContinuar.isHidden = true
             }
         }
+        
+        return true
     }
     
-    textfield
 }

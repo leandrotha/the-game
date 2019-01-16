@@ -37,6 +37,9 @@
                             <state key="normal" title="Continuar">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="onClickContinuarWithSender:" destination="-1" eventType="touchUpInside" id="XoR-6x-q36"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>

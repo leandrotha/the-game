@@ -6,17 +6,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "the-game/Login/Domain/LoginViewController.swift"
-            timestampString = "566327579.508008"
+            timestampString = "569337444.151849"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "LoginViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "the_game.LoginViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; the_game.LoginViewController"
+                  moduleName = "the-game"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/livetouch/Documents/pessoal/the-game/the-game/Login/Domain/LoginViewController.swift"
+                  timestampString = "569331396.500054"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "the_game.LoginViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;the_game.LoginViewController&gt;"
+                  moduleName = "the-game"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/livetouch/Documents/pessoal/the-game/the-game/Login/Domain/LoginViewController.swift"
+                  timestampString = "569331396.504564"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "50">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

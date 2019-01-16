@@ -3,6 +3,7 @@
 
 target 'the-game' do
   pod 'Firebase/Core'
+  pod 'FirebaseDatabase'
   pod 'Fabric'
   pod 'Crashlytics'
 
