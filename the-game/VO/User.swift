@@ -7,13 +7,16 @@
 //
 
 import Foundation
+import UIKit
 
 class User {
     
     var email :String?
     var senha :String?
+    var nome :String?
+    var foto :UIImage?
     
-    init(email: String? = nil, senha: String? = nil) {
+    init(email: String? = "", senha: String? = "") {
         self.email = email
         self.senha = senha
     }

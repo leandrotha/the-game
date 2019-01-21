@@ -10,9 +10,7 @@ import UIKit
 import Firebase
 
 class LoginViewController: UIViewController {
-    
-    var database: DatabaseReference?
-    
+
     //MARK: - Outlets
     
     @IBOutlet weak var stackContinuar: UIStackView! {
@@ -47,55 +45,23 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         initialSetup()
-        callFirebase({ [weak self] result in
-            guard let self = self else {return}
-            self.changeBackgroundWith(color: result)
-        })
-    }
-    
-    deinit {
-        if let db = database {
-            db.removeAllObservers()
-        }
     }
     
     //MARK: - Helpers
     
-    func callFirebase(_ callback: @escaping (String) -> ()) {
-        database = Database.database().reference().child("Color")
-        
-        guard let db = database else {return}
-        
-        db.observe(.childChanged, with: { snapshot in
-            print("======================\nLISTENING\n======================")
-            let value = snapshot.value as! String
-            callback(value)
-        })
-    }
-    
-    func changeBackgroundWith(color: String) {
-        switch color {
-        case ".red":
-            view.backgroundColor = .red
-        case ".blue":
-            view.backgroundColor = .blue
-        case ".green":
-            view.backgroundColor = .green
-        default:
-            view.backgroundColor = .clear
-        }
-    }
-    
     func initialSetup() {
-        view.backgroundColor = Constants.backgroundGray
+        view.backgroundColor = Constants.backgroundWhite()
     }
     
     //MARK: - Actions
     
     @IBAction func onClickContinuar(sender: UIButton) {
-        self.navigationController?.setViewControllers([HomeViewController()], animated: true)
+        self.navigationController?.present(HomeViewController(), animated: true, completion: nil)
     }
     
+    @IBAction func onClickNaoPossuoLogin(_ sender: Any) {
+        self.navigationController?.pushViewController(CadastroViewController(), animated: true)
+    }
 }
 
 extension LoginViewController: UITextFieldDelegate {

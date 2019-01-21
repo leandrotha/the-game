@@ -15,4 +15,11 @@ class Constants {
         return UIColor.lightGray.withAlphaComponent(0.5)
     }()
     
+    static let splashBackgroundBlack = {
+        return "#212121".hexToColor()
+    }
+    
+    static let backgroundWhite = {
+        return "#FAFAFA".hexToColor()
+    }
 }

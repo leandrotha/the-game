@@ -6,5 +6,6 @@ target 'the-game' do
   pod 'FirebaseDatabase'
   pod 'Fabric'
   pod 'Crashlytics'
+  pod 'AlamofireImage'
 
 end

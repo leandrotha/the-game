@@ -8,22 +8,25 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
-
-    let padding: CGFloat = 16.0
+class HomeViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupView()
-    }
-
-    func setupView() {
-        let label = UILabel(frame: CGRect(x: (UIScreen.main.bounds.width / 2) - padding, y: (UIScreen.main.bounds.height / 2) - padding, width: UIScreen.main.bounds.width - (padding * 2), height: 50.0))
-        label.text = "Hello!"
-        
-        view.addSubview(label)
-        view.layoutIfNeeded()
+        setupTabBar()
     }
     
+    func setupTabBar() {
+        let firstVc = UIViewController()
+        firstVc.title = "Meus grupos"
+        firstVc.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+        
+        let secondVc = UIViewController()
+        secondVc.title = "Second"
+        
+        let controllers = [firstVc, secondVc]
+        
+        viewControllers = controllers.map {UINavigationController(rootViewController: $0)}
+    }
+
 }

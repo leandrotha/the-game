@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "the-game/Login/Domain/LoginViewController.swift"
-            timestampString = "569337444.152361"
+            filePath = "the-game/Global/StringExtension.swift"
+            timestampString = "569521667.330652"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "deinit"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "hexToColor(withAlpha:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

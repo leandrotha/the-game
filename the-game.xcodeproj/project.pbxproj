@@ -11,6 +11,13 @@
 		037E8E7E21D3E2980008F10B /* StackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E8E7D21D3E2980008F10B /* StackViewExtension.swift */; };
 		037E8E8121D3E57B0008F10B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E8E8021D3E57B0008F10B /* User.swift */; };
 		03F42EAD21CDB576003E305A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03F42EAC21CDB576003E305A /* GoogleService-Info.plist */; };
+		631A330221F203A300FE16C4 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A330121F203A300FE16C4 /* StringExtension.swift */; };
+		631A330521F22CD600FE16C4 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A330321F22CD600FE16C4 /* CadastroViewController.swift */; };
+		631A330621F22CD600FE16C4 /* CadastroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 631A330421F22CD600FE16C4 /* CadastroViewController.xib */; };
+		631A330F21F2386300FE16C4 /* MeusAmigosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A330D21F2386300FE16C4 /* MeusAmigosViewController.swift */; };
+		631A331021F2386300FE16C4 /* MeusAmigosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 631A330E21F2386300FE16C4 /* MeusAmigosViewController.xib */; };
+		631A331421F2395400FE16C4 /* MeusAmigosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A331221F2395400FE16C4 /* MeusAmigosTableViewCell.swift */; };
+		631A331521F2395400FE16C4 /* MeusAmigosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 631A331321F2395400FE16C4 /* MeusAmigosTableViewCell.xib */; };
 		6395955121C16D8D0068A00D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395955021C16D8D0068A00D /* AppDelegate.swift */; };
 		6395955821C16D8D0068A00D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6395955721C16D8D0068A00D /* Assets.xcassets */; };
 		6395955B21C16D8D0068A00D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6395955921C16D8D0068A00D /* LaunchScreen.storyboard */; };
@@ -29,6 +36,13 @@
 		1523B0F6366BAF358F64947C /* Pods-the-game.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-game.release.xcconfig"; path = "Pods/Target Support Files/Pods-the-game/Pods-the-game.release.xcconfig"; sourceTree = "<group>"; };
 		2A550E8FD50907E6D8B619B4 /* libPods-the-game.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-the-game.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45CA576577EC8B317EA5504E /* Pods-the-game.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-game.debug.xcconfig"; path = "Pods/Target Support Files/Pods-the-game/Pods-the-game.debug.xcconfig"; sourceTree = "<group>"; };
+		631A330121F203A300FE16C4 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		631A330321F22CD600FE16C4 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
+		631A330421F22CD600FE16C4 /* CadastroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CadastroViewController.xib; sourceTree = "<group>"; };
+		631A330D21F2386300FE16C4 /* MeusAmigosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusAmigosViewController.swift; sourceTree = "<group>"; };
+		631A330E21F2386300FE16C4 /* MeusAmigosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeusAmigosViewController.xib; sourceTree = "<group>"; };
+		631A331221F2395400FE16C4 /* MeusAmigosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusAmigosTableViewCell.swift; sourceTree = "<group>"; };
+		631A331321F2395400FE16C4 /* MeusAmigosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeusAmigosTableViewCell.xib; sourceTree = "<group>"; };
 		6395954D21C16D8D0068A00D /* the-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "the-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6395955021C16D8D0068A00D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6395955721C16D8D0068A00D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +72,7 @@
 				6395955021C16D8D0068A00D /* AppDelegate.swift */,
 				037E8E7B21D3DCB80008F10B /* Constants.swift */,
 				037E8E7D21D3E2980008F10B /* StackViewExtension.swift */,
+				631A330121F203A300FE16C4 /* StringExtension.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -77,6 +92,33 @@
 				1523B0F6366BAF358F64947C /* Pods-the-game.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		631A330721F2378400FE16C4 /* Meus amigos */ = {
+			isa = PBXGroup;
+			children = (
+				631A331121F2393D00FE16C4 /* Cell */,
+				631A330821F237A200FE16C4 /* Domain */,
+			);
+			path = "Meus amigos";
+			sourceTree = "<group>";
+		};
+		631A330821F237A200FE16C4 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				631A330D21F2386300FE16C4 /* MeusAmigosViewController.swift */,
+				631A330E21F2386300FE16C4 /* MeusAmigosViewController.xib */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		631A331121F2393D00FE16C4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				631A331221F2395400FE16C4 /* MeusAmigosTableViewCell.swift */,
+				631A331321F2395400FE16C4 /* MeusAmigosTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		6395954421C16D8C0068A00D = {
@@ -102,6 +144,7 @@
 		6395954F21C16D8D0068A00D /* the-game */ = {
 			isa = PBXGroup;
 			children = (
+				631A330721F2378400FE16C4 /* Meus amigos */,
 				63F0B34B21EF5BE0001359B0 /* Home */,
 				037E8E7F21D3E4F00008F10B /* VO */,
 				037E8E7A21D3DC8A0008F10B /* Global */,
@@ -125,6 +168,8 @@
 			children = (
 				63B2F3E021C1721C001197FD /* LoginViewController.swift */,
 				63B2F3E121C1721C001197FD /* LoginViewController.xib */,
+				631A330321F22CD600FE16C4 /* CadastroViewController.swift */,
+				631A330421F22CD600FE16C4 /* CadastroViewController.xib */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -230,9 +275,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631A331021F2386300FE16C4 /* MeusAmigosViewController.xib in Resources */,
+				631A331521F2395400FE16C4 /* MeusAmigosTableViewCell.xib in Resources */,
 				63B2F3E321C1721C001197FD /* LoginViewController.xib in Resources */,
 				03F42EAD21CDB576003E305A /* GoogleService-Info.plist in Resources */,
 				63F0B35021EF5C0D001359B0 /* HomeViewController.xib in Resources */,
+				631A330621F22CD600FE16C4 /* CadastroViewController.xib in Resources */,
 				6395955B21C16D8D0068A00D /* LaunchScreen.storyboard in Resources */,
 				6395955821C16D8D0068A00D /* Assets.xcassets in Resources */,
 			);
@@ -289,11 +337,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B2F3E221C1721C001197FD /* LoginViewController.swift in Sources */,
+				631A330221F203A300FE16C4 /* StringExtension.swift in Sources */,
 				037E8E7E21D3E2980008F10B /* StackViewExtension.swift in Sources */,
 				6395955121C16D8D0068A00D /* AppDelegate.swift in Sources */,
 				037E8E8121D3E57B0008F10B /* User.swift in Sources */,
+				631A331421F2395400FE16C4 /* MeusAmigosTableViewCell.swift in Sources */,
 				037E8E7C21D3DCB80008F10B /* Constants.swift in Sources */,
 				63F0B34F21EF5C0D001359B0 /* HomeViewController.swift in Sources */,
+				631A330521F22CD600FE16C4 /* CadastroViewController.swift in Sources */,
+				631A330F21F2386300FE16C4 /* MeusAmigosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

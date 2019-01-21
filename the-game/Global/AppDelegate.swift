@@ -38,7 +38,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
         let navController = UINavigationController(rootViewController: LoginViewController(nibName: "LoginViewController", bundle: nil))
-        navController.navigationBar.barStyle = .blackTranslucent
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
     }

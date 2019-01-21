@@ -75,13 +75,23 @@
                         </textField>
                     </subviews>
                 </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tS-Af-oKS">
+                    <rect key="frame" x="16" y="252" width="382" height="30"/>
+                    <state key="normal" title="Não possuo um login"/>
+                    <connections>
+                        <action selector="onClickNaoPossuoLogin:" destination="-1" eventType="touchUpInside" id="xZf-Ob-UaF"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="EBp-DI-UCs" secondAttribute="trailing" constant="16" id="0u4-sT-tYe"/>
                 <constraint firstItem="SxS-tR-nnJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3eK-t3-8yK"/>
+                <constraint firstItem="7tS-Af-oKS" firstAttribute="leading" secondItem="mRR-5a-jFc" secondAttribute="leading" constant="16" id="Er8-Z5-deB"/>
+                <constraint firstItem="mRR-5a-jFc" firstAttribute="trailing" secondItem="7tS-Af-oKS" secondAttribute="trailing" constant="16" id="HgM-69-fkK"/>
                 <constraint firstItem="EBp-DI-UCs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="IUO-YI-0nD"/>
                 <constraint firstItem="EBp-DI-UCs" firstAttribute="top" secondItem="mRR-5a-jFc" secondAttribute="top" constant="30" id="NBK-ng-LYA"/>
+                <constraint firstItem="7tS-Af-oKS" firstAttribute="top" secondItem="EBp-DI-UCs" secondAttribute="bottom" constant="32" id="WW4-Y9-gyf"/>
                 <constraint firstAttribute="trailing" secondItem="SxS-tR-nnJ" secondAttribute="trailing" id="lUg-5Z-r6b"/>
                 <constraint firstItem="SxS-tR-nnJ" firstAttribute="bottom" secondItem="mRR-5a-jFc" secondAttribute="bottom" id="t4Q-EZ-l3i"/>
             </constraints>
