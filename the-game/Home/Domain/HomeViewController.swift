@@ -12,17 +12,17 @@ class HomeViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupTabBar()
     }
     
     func setupTabBar() {
         let firstVc = UIViewController()
-        firstVc.title = "Meus grupos"
+        firstVc.title = "Meus amigos"
         firstVc.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
         
         let secondVc = UIViewController()
-        secondVc.title = "Second"
+        secondVc.title = "Meus grupos"
         
         let controllers = [firstVc, secondVc]
         

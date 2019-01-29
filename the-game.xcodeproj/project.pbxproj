@@ -18,6 +18,10 @@
 		631A331021F2386300FE16C4 /* MeusAmigosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 631A330E21F2386300FE16C4 /* MeusAmigosViewController.xib */; };
 		631A331421F2395400FE16C4 /* MeusAmigosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A331221F2395400FE16C4 /* MeusAmigosTableViewCell.swift */; };
 		631A331521F2395400FE16C4 /* MeusAmigosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 631A331321F2395400FE16C4 /* MeusAmigosTableViewCell.xib */; };
+		6370EBF721FA22BF005B0A87 /* MeusGruposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6370EBF521FA22BF005B0A87 /* MeusGruposViewController.swift */; };
+		6370EBF821FA22BF005B0A87 /* MeusGruposViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6370EBF621FA22BF005B0A87 /* MeusGruposViewController.xib */; };
+		6370EBFC21FA2400005B0A87 /* GrupoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6370EBFA21FA2400005B0A87 /* GrupoCell.swift */; };
+		6370EBFD21FA2400005B0A87 /* GrupoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6370EBFB21FA2400005B0A87 /* GrupoCell.xib */; };
 		6395955121C16D8D0068A00D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395955021C16D8D0068A00D /* AppDelegate.swift */; };
 		6395955821C16D8D0068A00D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6395955721C16D8D0068A00D /* Assets.xcassets */; };
 		6395955B21C16D8D0068A00D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6395955921C16D8D0068A00D /* LaunchScreen.storyboard */; };
@@ -43,6 +47,10 @@
 		631A330E21F2386300FE16C4 /* MeusAmigosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeusAmigosViewController.xib; sourceTree = "<group>"; };
 		631A331221F2395400FE16C4 /* MeusAmigosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusAmigosTableViewCell.swift; sourceTree = "<group>"; };
 		631A331321F2395400FE16C4 /* MeusAmigosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeusAmigosTableViewCell.xib; sourceTree = "<group>"; };
+		6370EBF521FA22BF005B0A87 /* MeusGruposViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusGruposViewController.swift; sourceTree = "<group>"; };
+		6370EBF621FA22BF005B0A87 /* MeusGruposViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeusGruposViewController.xib; sourceTree = "<group>"; };
+		6370EBFA21FA2400005B0A87 /* GrupoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrupoCell.swift; sourceTree = "<group>"; };
+		6370EBFB21FA2400005B0A87 /* GrupoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GrupoCell.xib; sourceTree = "<group>"; };
 		6395954D21C16D8D0068A00D /* the-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "the-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6395955021C16D8D0068A00D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6395955721C16D8D0068A00D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +129,33 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		6370EBEF21FA2183005B0A87 /* Meus grupos */ = {
+			isa = PBXGroup;
+			children = (
+				6370EBF921FA23BE005B0A87 /* Cell */,
+				6370EBF021FA2191005B0A87 /* Domain */,
+			);
+			path = "Meus grupos";
+			sourceTree = "<group>";
+		};
+		6370EBF021FA2191005B0A87 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6370EBF521FA22BF005B0A87 /* MeusGruposViewController.swift */,
+				6370EBF621FA22BF005B0A87 /* MeusGruposViewController.xib */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6370EBF921FA23BE005B0A87 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6370EBFA21FA2400005B0A87 /* GrupoCell.swift */,
+				6370EBFB21FA2400005B0A87 /* GrupoCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		6395954421C16D8C0068A00D = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +179,7 @@
 		6395954F21C16D8D0068A00D /* the-game */ = {
 			isa = PBXGroup;
 			children = (
+				6370EBEF21FA2183005B0A87 /* Meus grupos */,
 				631A330721F2378400FE16C4 /* Meus amigos */,
 				63F0B34B21EF5BE0001359B0 /* Home */,
 				037E8E7F21D3E4F00008F10B /* VO */,
@@ -275,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6370EBF821FA22BF005B0A87 /* MeusGruposViewController.xib in Resources */,
 				631A331021F2386300FE16C4 /* MeusAmigosViewController.xib in Resources */,
 				631A331521F2395400FE16C4 /* MeusAmigosTableViewCell.xib in Resources */,
 				63B2F3E321C1721C001197FD /* LoginViewController.xib in Resources */,
@@ -283,6 +320,7 @@
 				631A330621F22CD600FE16C4 /* CadastroViewController.xib in Resources */,
 				6395955B21C16D8D0068A00D /* LaunchScreen.storyboard in Resources */,
 				6395955821C16D8D0068A00D /* Assets.xcassets in Resources */,
+				6370EBFD21FA2400005B0A87 /* GrupoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,8 +374,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6370EBF721FA22BF005B0A87 /* MeusGruposViewController.swift in Sources */,
 				63B2F3E221C1721C001197FD /* LoginViewController.swift in Sources */,
 				631A330221F203A300FE16C4 /* StringExtension.swift in Sources */,
+				6370EBFC21FA2400005B0A87 /* GrupoCell.swift in Sources */,
 				037E8E7E21D3E2980008F10B /* StackViewExtension.swift in Sources */,
 				6395955121C16D8D0068A00D /* AppDelegate.swift in Sources */,
 				037E8E8121D3E57B0008F10B /* User.swift in Sources */,
