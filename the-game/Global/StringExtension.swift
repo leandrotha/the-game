@@ -30,6 +30,21 @@ extension String {
         return self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
+    func isValidEmail() -> Bool {
+        
+        var emailRegex: NSRegularExpression?
+        
+        do {
+            emailRegex = try NSRegularExpression(pattern: "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$", options: .caseInsensitive)
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        
+        guard let regex = emailRegex else {return false}
+        
+        return regex.firstMatch(in: self, options: [], range: NSRange(location: 0, length: count)) != nil
+    }
+    
     subscript (r: NSRange) -> String {
         get {
             if let range = Range(r, in: self) {

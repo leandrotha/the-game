@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		035D0417220A4F0A00688600 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035D0416220A4F0A00688600 /* TaskManager.swift */; };
 		037E8E7C21D3DCB80008F10B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E8E7B21D3DCB80008F10B /* Constants.swift */; };
 		037E8E7E21D3E2980008F10B /* StackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E8E7D21D3E2980008F10B /* StackViewExtension.swift */; };
 		037E8E8121D3E57B0008F10B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E8E8021D3E57B0008F10B /* User.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		035D0416220A4F0A00688600 /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		037E8E7B21D3DCB80008F10B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		037E8E7D21D3E2980008F10B /* StackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewExtension.swift; sourceTree = "<group>"; };
 		037E8E8021D3E57B0008F10B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		037E8E7A21D3DC8A0008F10B /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				035D0416220A4F0A00688600 /* TaskManager.swift */,
 				6395955021C16D8D0068A00D /* AppDelegate.swift */,
 				037E8E7B21D3DCB80008F10B /* Constants.swift */,
 				037E8E7D21D3E2980008F10B /* StackViewExtension.swift */,
@@ -377,6 +380,7 @@
 				6370EBF721FA22BF005B0A87 /* MeusGruposViewController.swift in Sources */,
 				63B2F3E221C1721C001197FD /* LoginViewController.swift in Sources */,
 				631A330221F203A300FE16C4 /* StringExtension.swift in Sources */,
+				035D0417220A4F0A00688600 /* TaskManager.swift in Sources */,
 				6370EBFC21FA2400005B0A87 /* GrupoCell.swift in Sources */,
 				037E8E7E21D3E2980008F10B /* StackViewExtension.swift in Sources */,
 				6395955121C16D8D0068A00D /* AppDelegate.swift in Sources */,
