@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+import Alamofire
 
 class LoginViewController: UIViewController {
 
@@ -53,6 +53,10 @@ class LoginViewController: UIViewController {
         view.backgroundColor = Constants.backgroundWhite()
     }
     
+    static func factorial(_ n: Int) {
+        
+    }
+    
     //MARK: - Actions
     
     @IBAction func onClickContinuar(sender: UIButton) {
@@ -81,4 +85,23 @@ extension LoginViewController: UITextFieldDelegate {
         return true
     }
     
+}
+
+extension Task {
+    static func calculate(_ n: Int) -> Task {
+        return Task { controller in
+            Alamofire.request(URL(string: "https://jsonplaceholder.typicode.com/posts")!).responseJSON(completionHandler: { response in
+                if let error = response.error {
+                    controller.failure(error)
+                } else if response.result.isSuccess {
+                    do {
+                       try Parser.parserPlaceholder(data: response.data)
+                        controller.finish()
+                    } catch let error {
+                        controller.failure(error)
+                    }
+                }
+            })
+        }
+    }
 }
