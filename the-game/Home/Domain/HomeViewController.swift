@@ -17,11 +17,11 @@ class HomeViewController: UITabBarController {
     }
     
     func setupTabBar() {
-        let firstVc = UIViewController()
+        let firstVc = MeusAmigosViewController()
         firstVc.title = "Meus amigos"
         firstVc.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
         
-        let secondVc = UIViewController()
+        let secondVc = MeusGruposViewController()
         secondVc.title = "Meus grupos"
         
         let controllers = [firstVc, secondVc]

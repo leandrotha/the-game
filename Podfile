@@ -7,5 +7,6 @@ target 'the-game' do
   pod 'Fabric'
   pod 'Crashlytics'
   pod 'AlamofireImage'
+  pod 'IQKeyboardManagerSwift'
 
 end
